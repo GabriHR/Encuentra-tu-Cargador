@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentra tu Cargador</title>
+
+    <!-- CSS de Leaflet (Mapas) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Nuestro CSS (ruta relativa a la carpeta public) -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>⚡ Encuentra tu Cargador</h1>
+    <button id="btn-locate">📍 Mi Ubicación</button>
+</header>
+
+<main>
+    <div id="map"></div>
+
+    <aside id="info-panel">
+        <h2>Detalles de la Plaza</h2>
+        <p id="charger-info">Cargando datos desde la nube...</p>
+        <button id="btn-reserve" disabled>Reservar Plaza</button>
+    </aside>
+</main>
+
+<!-- JS de Leaflet (Mapas) -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Nuestro JS (ruta relativa a la carpeta public) -->
+<script src="js/app.js"></script>
+</body>
+</html>
